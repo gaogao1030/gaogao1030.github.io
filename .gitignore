@@ -2,4 +2,4 @@
 qiniu.yml.example
 qiniu.yml
 /_site
-
+/node_modules
