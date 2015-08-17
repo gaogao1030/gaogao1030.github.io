@@ -5,6 +5,10 @@
 
 * rake draft(生成新的草稿)
 
-* rake push(部署github page上的个人网站)
+* rake deploy(部署github page上的个人网站)
 
-* 目前仅限gaogao使用 如要使用请修改Rakefile 对应的用户和仓库
+** gulp **
+
+* 请先运行 npm install
+
+* 安装额外插件请用npm install *** --save-dev 将插件保存到package.json

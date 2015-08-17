@@ -1,0 +1,22 @@
+{
+  "name": "gaogao1030.github.io",
+  "version": "0.0.0",
+  "description": "**该仓库的作用是为了避开github page 对jekyll插件的审核,其作用是让直接生成的静态页面显示**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaogao1030/gaogao1030.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaogao1030/gaogao1030.github.io/issues"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0"
+  }
+}
