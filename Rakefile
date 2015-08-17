@@ -5,6 +5,8 @@ require 'irb/completion'
 require "liquid.rb"
 require 'qiniu.rb'
 require 'yaml.rb'
+local_repo = "gaogao.ninja"
+remote_repo = "gaogao1030.github.io"
 #rake server host="localhost" p="4000"
 
 task :console do |t,args|
@@ -90,17 +92,17 @@ task :draft do
  end
 end
 
-desc "take repo from github"
-task :take_repo do
+desc "fetch repo from github"
+task :fetch_repo do
   repo = ENV["repo"]
   url= "git@github.com:gaogao1030/#{repo}"
-  unless FileTest.directory?("../#{repo}")
+  unless FileTest.directory?("../#{local_repo}")
     puts "clone #{url}.git from github"
     cd '../' do
-      system "git clone #{url}.git"
+      system "git clone #{url}.git #{local_repo}"
     end
   else
-    cd "../#{repo}/" do
+    cd "../#{local_repo}/" do
       puts "update #{url}"
       system "git reset --hard HEAD"
       system "git pull origin master"
@@ -110,16 +112,14 @@ end
 
 desc "build jekyll site to dest"
 task :build do
-  dest = ENV["dest"] || "../gaogao1030.github.io"
+  dest = ENV["dest"]
   puts "Build jekyll site to #{dest}"
   system "bundle exec jekyll build -d #{dest} --config _config.yml,_production_config.yml"
 end
 
 desc "push repo to github"
 task :push do
-  repo = ENV["repo"]
-  url= "git@github.com:gaogao1030/#{repo}"
-  cd "../#{repo}/" do
+  cd "../#{local_repo}/" do
     puts "add .nojekyll"
     system "touch .nojekyll"
     puts "Pushing to `master' branch:"
@@ -132,11 +132,11 @@ end
 
 desc "deploy site to github"
 task :deploy do
-  repo = ENV["repo"] || "gaogao1030.github.io"
+  repo = ENV["repo"] || remote_repo
 
-  system "rake take_repo repo=#{repo}"
-  system "rake build dest=../#{repo}"
-  system "rake push repo=#{repo}"
+  system "rake fetch_repo repo=#{repo}"
+  system "rake build dest=../#{local_repo}"
+  system "rake push"
   puts "has already deployed"
 end
 
