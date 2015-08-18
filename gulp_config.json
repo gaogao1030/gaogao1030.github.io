@@ -1,18 +1,17 @@
 {
-  "coffee": [
+  "coffee":
     {
       "src": [
           "_assets/javascript/**/*.coffee"
         ],
       "dest": "assets/javascript"
     }
-  ],
-  "js": [
+  ,
+  "js":
     {
       "src": [
-          "_assets/javascript/leancloud-realtime/src/*.js"
+          "_assets/javascript/**/*.js"
         ],
-      "dest": "assets/javascript/leancloud-realtime/src"
+      "dest": "assets/javascript"
     }
-  ]
 }

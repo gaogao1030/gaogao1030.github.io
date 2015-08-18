@@ -6,16 +6,11 @@ js:
   - http://cdn.staticfile.org/underscore.js/1.7.0/underscore-min.map
   - https://cdn1.lncld.net/static/js/av-mini-0.5.5.js
   - http://cdn.staticfile.org/jquery-dateFormat/1.0/jquery.dateFormat.min.js
-css:
----
-{% javascript_asset_tag global %}
   - /javascript/leancloud-realtime/src/AV.realtime.js
   - /javascript/teaParty.coffee
-{% endjavascript_asset_tag %}
-
-{% css_asset_tag global %}
+css:
   - /css/demos/my_realtime.scss
-{% endcss_asset_tag %}
+---
 .page-header.text-center
   .page-header-text
     |轻飘飘
