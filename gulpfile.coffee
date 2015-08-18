@@ -1,31 +1,36 @@
 gulp = require 'gulp'
+watch = require 'gulp-watch'
 uglify = require 'gulp-uglify'
 config = require './gulp_config.json'
 coffee = require 'gulp-coffee'
 gutil = require 'gulp-util'
 rename = require 'gulp-rename'
+
 fs = require 'fs'
 path = require 'path'
 _ = require 'underscore'
 
-coffee_to_js = (asset)->
-  gulp.src(asset.src)
+gulp.task 'compressed', ->
+    dest = "assets/javascript"
+    gulp.src(config.coffee.src)
       .pipe(coffee({bare: true}).on('error',gutil.log))
       .pipe(uglify())
       .pipe(rename({extname: '.min.js'}))
-      .pipe(gulp.dest(asset.dest))
-
-js_uglify = (asset) ->
-  gulp.src(asset.src)
+      .pipe(gulp.dest(dest))
+    gulp.src(config.js.src)
       .pipe(uglify())
       .pipe(rename({extname: '.min.js'}))
-      .pipe(gulp.dest(asset.dest))
+      .pipe(gulp.dest(dest))
 
-gulp.task 'development', ->
+gulp.task 'watch',->
+  dest = "_site/javascript"
   gulp.src(config.coffee.src)
-      .pipe(coffee({bare: true}).on('error',gutil.log))
-      .pipe(gulp.dest("_assets/javascript"))
+    .pipe(watch(config.coffee.src))
+    .pipe(coffee({bare: true}).on('error',gutil.log))
+    .pipe(gulp.dest(dest))
+  gulp.src(config.js.src)
+    .pipe(watch(config.js.src))
+    .pipe(gulp.dest(dest))
 
 gulp.task 'default', ->
-  coffee_to_js(config.coffee)
-  js_uglify(config.js)
+  console.log "hellow"

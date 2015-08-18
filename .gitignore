@@ -4,3 +4,4 @@ qiniu.yml
 /_site
 /node_modules
 /bower_components
+/javascript

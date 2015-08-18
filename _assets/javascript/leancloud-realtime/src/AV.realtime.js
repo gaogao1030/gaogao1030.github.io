@@ -1088,7 +1088,7 @@ void function(win) {
                     // 只传入 callback
                     if (typeof argument === 'function') {
                         callback = argument;
-                    } 
+                    }
                     // 传入参数
                     else {
                         options = argument;
