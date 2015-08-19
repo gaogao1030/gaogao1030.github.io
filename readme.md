@@ -9,7 +9,13 @@
 
 
 **GetStarted**
-* 请先运行 npm install
+* npm install
+
+* bundle install
+
+* npm install gulp -g
+
+* gem install compass
 
 * 安装额外插件请用npm install *** --save-dev 将插件保存到package.json
 
