@@ -7,8 +7,12 @@
 
 * rake deploy(部署github page上的个人网站)
 
-** gulp **
 
+**GetStarted**
 * 请先运行 npm install
 
 * 安装额外插件请用npm install *** --save-dev 将插件保存到package.json
+
+* 进入目录后输入./run 运行
+
+* 使用gulp dev 进入开发模式
