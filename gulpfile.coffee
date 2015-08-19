@@ -9,10 +9,14 @@ rename = require 'gulp-rename'
 compass = require 'gulp-compass'
 minifycss = require 'gulp-minify-css'
 sass = require 'gulp-sass'
-
 fs = require 'fs'
 path = require 'path'
 _ = require 'underscore'
+
+
+js_dest = "_site/javascript"
+css_dest = "_site/stylesheets"
+css_source = "_assets/stylesheets"
 
 gulp.task 'compressed', ->
     gulp.src(config.coffee.src)
@@ -25,22 +29,24 @@ gulp.task 'compressed', ->
       .pipe(rename({extname: '.min.js'}))
       .pipe(gulp.dest(config.js.dest))
     gulp.src(config.scss.src)
-      .pipe(sass().on('error',sass.logError))
+      .pipe(compass({
+        sass: css_source
+      }))
       .pipe(minifycss())
       .pipe(rename({extname: '.min.css'}))
       .pipe(gulp.dest(config.scss.dest))
 
 gulp.task 'uncompressed', ->
-    dest = "_site/javascript"
-    css_dest = "_site/stylesheets"
     gulp.src(config.coffee.src)
       .pipe(coffee({bare: true}).on('error',gutil.log))
-      .pipe(gulp.dest(dest))
+      .pipe(gulp.dest(js_dest))
     gulp.src(config.js.src)
-      .pipe(gulp.dest(dest))
+      .pipe(gulp.dest(js_dest))
     gulp.src(config.scss.src)
-      .pipe(sass().on('error',sass.logError))
-      .pipe(gulp.dest(css_dest))
+      .pipe(compass({
+        css: css_dest
+        sass: css_source
+      }))
 
 gulp.task 'watch',->
   watch(config.coffee.src).on 'change', (path)->
@@ -55,18 +61,12 @@ gulp.task 'watch',->
     .pipe(gulp.dest(dest))
     console.log path + ' was changed'
   watch(config.scss.src).on 'change',(path) ->
-    dest = path.split("/").slice(0,-1).join("/").replace("_assets","_site")
     gulp.src(path)
-      .pipe(sass().on('error',sass.logError))
-      .pipe(gulp.dest(dest))
-      console.log path + ' was changed'
+      .pipe(compass({
+        css: css_dest
+        sass: css_source
+      }))
 
-gulp.task 'compass', ->
-  gulp.src('app/sass/*.sass')
-    .pipe(compass({
-      css: 'app/assets/css'
-      sass: 'app/sass'
-    }))
 
 gulp.task 'dev',['uncompressed','watch']
 

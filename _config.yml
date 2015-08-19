@@ -30,7 +30,6 @@ jekyll-archives:
 
 gems:
   - jekyll-archives
-  - jekyll-compass
 
 
 defaults:

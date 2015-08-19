@@ -4,6 +4,7 @@ gem 'jekyll-slim'
 gem 'slim', github: 'slim-template/slim'
 gem 'coffee-script'
 gem 'sass'
+gem 'compass'
 gem 'yui-compressor'
 gem 'closure-compiler'
 
@@ -18,6 +19,5 @@ group :jekyll_plugins do
   gem 'httparty'
   gem 'jekyll-coffeescript'
   gem 'jekyll-asset-pipeline'
-  gem 'jekyll-compass'
 end
 
