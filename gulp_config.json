@@ -4,14 +4,20 @@
       "src": [
           "_assets/javascript/**/*.coffee"
         ],
-      "dest": "assets/javascript"
-    }
-  ,
+      "dest": "_site/assets/javascript"
+    },
   "js":
     {
       "src": [
           "_assets/javascript/**/*.js"
         ],
-      "dest": "assets/javascript"
+      "dest": "_site/assets/javascript"
+    },
+  "scss":
+    {
+      "src": [
+          "_assets/stylesheets/**/*.scss"
+        ],
+        "dest": "_site/assets/stylesheets"
     }
 }

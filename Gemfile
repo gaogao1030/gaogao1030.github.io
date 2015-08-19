@@ -18,5 +18,6 @@ group :jekyll_plugins do
   gem 'httparty'
   gem 'jekyll-coffeescript'
   gem 'jekyll-asset-pipeline'
+  gem 'jekyll-compass'
 end
 

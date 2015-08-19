@@ -1,1 +1,1 @@
-console.log "del hello"
+console.log "hello gulp"
