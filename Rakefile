@@ -112,9 +112,10 @@ end
 
 desc "build jekyll site to dest"
 task :build do
-  dest = ENV["dest"]
+  dest = ENV["dest"] || local_repo
   puts "Build jekyll site to #{dest}"
-  system "bundle exec jekyll build -d #{dest} --config _config.yml,_production_config.yml"
+  system "gulp compressed"
+  system "bundle exec jekyll build -d #{dest} --config _config.yml"
 end
 
 desc "push repo to github"

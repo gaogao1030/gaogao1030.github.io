@@ -21,7 +21,7 @@ kramdown:
 timezone: '+0800'
 permalink: '/:categories/:year/:month/:day/:title'
 
-exclude: ["Rakefile",".ruby-version","Gemfile","Gemfile.lock","readme.md","initializers","qiniu.yml","bower.json","bower_components","run","gulp_config.json","gulpfile.coffee"]
+exclude: ["Rakefile",".ruby-version","Gemfile","Gemfile.lock","readme.md","initializers","qiniu.yml","bower.json","bower_components","run","gulp_config.json","gulpfile.coffee","node_modules","package.json"]
 keep_files: [".git","CNAME",".nojekyll"]
 
 paginate: 10
@@ -44,9 +44,3 @@ slim:
   pretty: true
   format: html5
 
-#asset_pipeline:
-#  bundle: false            # Default = true
-#  compress: false          # Default = true
-#  output_path: assets     # Default = assets
-#  display_path: nil       # Default = nil
-#  gzip: false             # Default = false
