@@ -2,9 +2,6 @@ collections:
   demos:
     output: true
     permalink: /:collection/:path/
-  assets:
-    output: true
-    permalink: /:collection/:path/
 #
 # Site settings
 title: gaogao
@@ -43,12 +40,6 @@ defaults:
       type: demos
     values:
       layout: demo
-  -
-    scope:
-      path: ""
-      type: assets
-    values:
-      layout: ""
 
 slim:
   pretty: true
