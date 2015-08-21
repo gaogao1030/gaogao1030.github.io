@@ -67,7 +67,7 @@ gulp.task 'watch',->
     gulp.src(path)
       .pipe(compass({
         css: css_dest
-        sass: css_sourcer_dir
+        sass: css_source_dir
       }))
 
 
