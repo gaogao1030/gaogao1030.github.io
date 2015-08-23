@@ -6,6 +6,7 @@ gem 'coffee-script'
 gem 'sass'
 gem 'yui-compressor'
 gem 'closure-compiler'
+gem 'qiniu'
 
 group :jekyll_plugins do
   gem 'kramdown'
