@@ -102,6 +102,11 @@ GEM
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
+    qiniu (6.4.2)
+      json (~> 1.8)
+      mime-types (~> 2.4.3)
+      rest-client (~> 1.7.3)
+      ruby-hmac (~> 0.4)
     qiniu-rs (1.1.0)
       json
       mime-types
@@ -114,6 +119,7 @@ GEM
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rouge (1.9.0)
+    ruby-hmac (0.4.0)
     safe_yaml (1.0.4)
     sass (3.4.15)
     slop (3.6.0)
@@ -143,6 +149,7 @@ DEPENDENCIES
   jekyll-slim
   kramdown
   pry-byebug
+  qiniu
   qiniu-rs
   rouge
   sass

@@ -5,6 +5,7 @@ require 'irb/completion'
 require "liquid.rb"
 require 'qiniu.rb'
 require 'yaml.rb'
+require 'jekyll'
 local_repo = "gaogao.ninja"
 remote_repo = "gaogao1030.github.io"
 #rake server host="localhost" p="4000"

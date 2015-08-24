@@ -1,7 +1,7 @@
 require 'jekyll_asset_pipeline'
 require 'coffee-script'
 require 'sass'
-require 'yui/compressor'
+#require 'yui/compressor'
 require 'closure-compiler'
 module JekyllAssetPipeline
   class CoffeeScriptConverter < JekyllAssetPipeline::Converter

@@ -7,6 +7,7 @@ gem 'sass'
 gem 'compass'
 gem 'yui-compressor'
 gem 'closure-compiler'
+gem 'qiniu'
 
 group :jekyll_plugins do
   gem 'kramdown'
