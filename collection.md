@@ -18,6 +18,8 @@ title: 收藏
 
  *  [Codewars](http://www.codewars.com/):哟~~~~程序员之间的战争 看上去好像好好玩
 
+ *  [pocket](http://www.getpocket.com/):在线书签收藏
+
  **图片类网站:**
 
  *  [pintrest](https://www.pinterest.com/)：图片版本的twitter
