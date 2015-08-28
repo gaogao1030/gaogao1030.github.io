@@ -7,10 +7,6 @@ gutil = require 'gulp-util'
 rename = require 'gulp-rename'
 compass = require 'gulp-compass'
 minifycss = require 'gulp-minify-css'
-sass = require 'gulp-sass'
-fs = require 'fs'
-path = require 'path'
-_ = require 'underscore'
 
 
 js_dest = "javascript"
@@ -41,7 +37,10 @@ gulp.task 'compressed', ->
 
 gulp.task 'uncompressed', ->
     gulp.src(coffee_source)
-      .pipe(coffee({bare: true}).on('error',gutil.log))
+      #.pipe(coffee({bare: true}).on('error',gutil.log))
+      .pipe(coffee({bare: true}).on('error', (err)->
+        console.log "#{err.name}:\"#{err.message}\" in #{err.filename}:#{err.location.first_line}"
+      ))
       .pipe(gulp.dest(js_dest))
     gulp.src(js_source)
       .pipe(gulp.dest(js_dest))
@@ -55,7 +54,9 @@ gulp.task 'watch',->
   watch(coffee_source).on 'change', (path)->
     dest = path.split("/").slice(0,-1).join("/").replace("_assets/","")
     gulp.src(path)
-    .pipe(coffee({bare: true}).on('error',gutil.log))
+    .pipe(coffee({bare: true}).on('error', (err)->
+      console.log "#{err.name}:\"#{err.message}\" in #{err.filename}:#{err.location.first_line}"
+    ))
     .pipe(gulp.dest(dest))
     console.log path + ' was changed'
   watch(js_source).on 'change', (path)->
@@ -69,6 +70,10 @@ gulp.task 'watch',->
         css: css_dest
         sass: css_source_dir
       }))
+      .on('error',(err)->
+        console.log err.message
+        this.emit('end')
+      )
 
 
 gulp.task 'dev',['uncompressed','watch']
