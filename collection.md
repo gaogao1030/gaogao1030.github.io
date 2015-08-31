@@ -20,6 +20,8 @@ title: 收藏
 
  *  [pocket](http://www.getpocket.com/):在线书签收藏
 
+ *  [云梯](http://www.cloudtizi.com/): 翻墙用 比较良心的
+
  **图片类网站:**
 
  *  [pintrest](https://www.pinterest.com/)：图片版本的twitter
