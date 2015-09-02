@@ -22,6 +22,8 @@ title: 收藏
 
  *  [云梯](http://www.cloudtizi.com/): 翻墙用 比较良心的
 
+ *  [liquid-documentation](https://docs.shopify.com/themes/liquid-documentation/basics): Liquid is an open-source, Ruby-based template language created by Shopify. It is the backbone of Shopify themes and is used to load dynamic content on storefronts.
+
  **图片类网站:**
 
  *  [pintrest](https://www.pinterest.com/)：图片版本的twitter
