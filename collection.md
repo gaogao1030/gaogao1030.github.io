@@ -8,7 +8,7 @@ title: 收藏
 *   [ECMAScript 6入门](http://es6.ruanyifeng.com/#README):ECMAScript 6的入门书籍 为了迎接新的时代请务必阅读
 *   [javascript标准参考教程](http://javascript.ruanyifeng.com/library/designpattern.html):很好的javascript教程书籍 非常具有学习价值
 *   [js函数式编程指南](http://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/):很有意思的书籍 不妨读一读 很短但却很有趣
-*  [The Linux Command Line](http://billie66.github.io/TLCL/): 帮助你了解linux的一些命令哟～
+*   [The Linux Command Line](http://billie66.github.io/TLCL/): 帮助你了解linux的一些命令哟～
 
 
 #网站类
@@ -38,7 +38,13 @@ title: 收藏
 
  *  [Bootstrap(english)](http://getbootstrap.com/):来自Twitter的前端开发框架。这里是[中文版](http://v3.bootcss.com/)
 
- **服务器端**
+ **JavaScript**
+ *  [React.js 的介绍 - 针对了解 jQuery 的工程师（译）](http://segmentfault.com/a/1190000003501752): 对了解react的状态机制有很好的一个理解
+
+ **RubyOnRails:**
+ *  [Rails4.2-stable 参考手册](http://kelby.gitbooks.io/rails-beginner-s-guide/content/index.html): 参考手册
+
+ *  [Rails实践](http://rails-practice.com/content/Chapter_4/4.2.html): 由ruby-china网友撰写
 
  *  [RubyApi文档](http://doc.rubyfans.com/ruby/v2.1/): 便于查询ruby下的api
 
