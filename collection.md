@@ -38,10 +38,12 @@ title: 收藏
 
  *  [Bootstrap(english)](http://getbootstrap.com/):来自Twitter的前端开发框架。这里是[中文版](http://v3.bootcss.com/)
 
- **JavaScript**
+ **JavaScript:**
+
  *  [React.js 的介绍 - 针对了解 jQuery 的工程师（译）](http://segmentfault.com/a/1190000003501752): 对了解react的状态机制有很好的一个理解
 
  **RubyOnRails:**
+
  *  [Rails4.2-stable 参考手册](http://kelby.gitbooks.io/rails-beginner-s-guide/content/index.html): 参考手册
 
  *  [Rails实践](http://rails-practice.com/content/Chapter_4/4.2.html): 由ruby-china网友撰写
