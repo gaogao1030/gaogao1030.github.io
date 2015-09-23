@@ -53,6 +53,8 @@ title: 收藏
  *  [Bootstrap(english)](http://getbootstrap.com/):来自Twitter的前端开发框架。这里是[中文版](http://v3.bootcss.com/)
 
  *  [ISUX](http://isux.tencent.com/zh-hans/): 腾讯社交用户体验设计,简称ISUX (Internet Social User Experience)。
+ 
+ *  [Amaze UI](http://amazeui.org/): 中国首个开源 HTML5 跨屏前端框架
 
 
  **JavaScript:**
@@ -60,6 +62,7 @@ title: 收藏
  *  [React.js 的介绍 - 针对了解 jQuery 的工程师（译）](http://segmentfault.com/a/1190000003501752): 对了解react的状态机制有很好的一个理解
 
 **StyleSheet:**
+
 *   [纯 CSS 实现高度与宽度成比例的效果](http://zihua.li/2013/12/keep-height-relevant-to-width-using-css/): 很有用的一个保持宽高比的小技巧
 
 *   [未知尺寸元素水平垂直居中:](http://demo.doyoe.com/css/alignment/): 垂直居中的注解
