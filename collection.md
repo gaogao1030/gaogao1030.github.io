@@ -53,6 +53,8 @@ title: 收藏
  *  [Bootstrap(english)](http://getbootstrap.com/):来自Twitter的前端开发框架。这里是[中文版](http://v3.bootcss.com/)
 
  *  [ISUX](http://isux.tencent.com/zh-hans/): 腾讯社交用户体验设计,简称ISUX (Internet Social User Experience)。
+ 
+ *  [Amaze UI](http://amazeui.org/): 中国首个开源 HTML5 跨屏前端框架
 
 
  **JavaScript:**
