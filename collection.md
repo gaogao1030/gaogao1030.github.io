@@ -68,6 +68,8 @@ title: 收藏
 
 *   [未知尺寸元素水平垂直居中:](http://demo.doyoe.com/css/alignment/): 垂直居中的注解
 
+*   [jQuery API](http://jquery.cuishifeng.cn/): Jquery Api中文文档
+
  **RubyOnRails:**
 
  *  [Rails4.2-stable 参考手册](http://kelby.gitbooks.io/rails-beginner-s-guide/content/index.html): 参考手册
