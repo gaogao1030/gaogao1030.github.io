@@ -15,6 +15,8 @@ title: 收藏
 
 *   [The Linux Command Line](http://billie66.github.io/TLCL/): 帮助你了解linux的一些命令哟～
 
+*   [react-webpack-cookbook](https://fakefish.github.io/react-webpack-cookbook/): 这本小书的目的是引导你进入 React 和 Webpack 的世界。他们两个都是非常有用的技术，如果同时使用他们，前端开发会更加有趣。
+
 
 #网站类
 
