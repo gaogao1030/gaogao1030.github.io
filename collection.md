@@ -32,6 +32,10 @@ title: 收藏
 
  *  [liquid-documentation](https://docs.shopify.com/themes/liquid-documentation/basics): Liquid is an open-source, Ruby-based template language created by Shopify. It is the backbone of Shopify themes and is used to load dynamic content on storefronts.
 
+ **二次元**
+
+ * [where.moe](http://where.moe):追新番
+
  **博客**
 
  *  [钉子の次元](http://blog.dimpurr.com/): Dimpurr – 千里之行，始於足下。
@@ -66,11 +70,13 @@ title: 收藏
 
 **StyleSheet:**
 
-*   [纯 CSS 实现高度与宽度成比例的效果](http://zihua.li/2013/12/keep-height-relevant-to-width-using-css/): 很有用的一个保持宽高比的小技巧
+ * [纯 CSS 实现高度与宽度成比例的效果](http://zihua.li/2013/12/keep-height-relevant-to-width-using-css/): 很有用的一个保持宽高比的小技巧
 
-*   [未知尺寸元素水平垂直居中:](http://demo.doyoe.com/css/alignment/): 垂直居中的注解
+ * [未知尺寸元素水平垂直居中:](http://demo.doyoe.com/css/alignment/): 垂直居中的注解
 
-*   [jQuery API](http://jquery.cuishifeng.cn/): Jquery Api中文文档
+ * [jQuery API](http://jquery.cuishifeng.cn/): Jquery Api中文文档
+
+ * [Json Server](https://github.com/typicode/json-server): 模拟服务器json数据
 
  **RubyOnRails:**
 
