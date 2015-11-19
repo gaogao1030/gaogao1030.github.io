@@ -37,6 +37,8 @@ title: 收藏
 
  * [where.moe](http://where.moe):追新番
 
+ * [FuckBiliBili](http://www.fuckbilibili.com/): 我们的宗旨:干翻B站
+
  **博客**
 
  *  [钉子の次元](http://blog.dimpurr.com/): Dimpurr – 千里之行，始於足下。
