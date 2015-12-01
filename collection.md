@@ -33,6 +33,8 @@ title: 收藏
  *  [liquid-documentation](https://docs.shopify.com/themes/liquid-documentation/basics): Liquid is an open-source, Ruby-based template language created by Shopify. It is the backbone of Shopify themes and is used to load dynamic content on storefronts.
  *  [ping++](https://pingxx.com/): 支付聚合SDK
 
+ *  [看云](http://www.kancloud.cn/explore):技术文档/书籍和用户手册的写作、电子出版、阅读和托管平台
+
  **二次元**
 
  * [where.moe](http://where.moe):追新番
