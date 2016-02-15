@@ -37,6 +37,8 @@ title: 收藏
 
  *  [C9.io](http://c9.io): 云开发环境
 
+ *  [ubuntu源列表](http://wiki.ubuntu.org.cn/Qref/Source): ubuntu源列表
+
  **二次元**
 
  * [where.moe](http://where.moe):追新番
