@@ -1,0 +1,22 @@
+{
+  "name": "gaogao1030.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaogao1030/gaogao1030.github.io.git"
+  },
+  "author": "gaogao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaogao1030/gaogao1030.github.io/issues"
+  },
+  "homepage": "https://github.com/gaogao1030/gaogao1030.github.io#readme",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  }
+}
