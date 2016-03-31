@@ -28,6 +28,11 @@ module.exports = {
       test: /\.js$/,
       include: __dirname,
       loader: 'jshint-loader'
+    }],
+    loaders: [{
+      test: /\.scss?$/,
+      loaders: ['style','css','sass'],
+      include: __dirname
     },{
       test: /\.scss?$/,
       loaders: ['style','css','sass'],
