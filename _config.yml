@@ -4,11 +4,11 @@
 
 # Site
 title: ガオガオ
-subtitle:
-description:
+subtitle: 站点还在建设中
+description: 可以暂时先访问http://gaoyh.me
 author: ガオガオ
 language: zh
-timezone: BeiJing
+timezone: China
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
